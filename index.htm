@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body { margin: 0; background: #000; overflow: hidden; }
+      .video-container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+      }
+      .video-container iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 56.25vw; 
+        min-height: 100vh;
+        min-width: 177.77vh; 
+        transform: translate(-50%, -50%);
+        border: 0;
+      }
+      h1 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        z-index: 10;
+        font-family: sans-serif;
+        pointer-events: none; /* Let clicks pass through to the video */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Split screen for the dream video.exe</h1>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/YVgSFTzhzxg?autoplay=1&mute=1" 
+        allow="autoplay; fullscreen" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </body>
+</html>
