@@ -36,7 +36,6 @@ export default {
           </div>
         </body>
       </html>
-<marquee>fuck this.</marquee>
     `;
 
     return new Response(html, {
